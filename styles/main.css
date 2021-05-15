@@ -1,0 +1,115 @@
+a{
+    text-decoration:none;
+    color:#4183C4;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    color:#444;
+    line-height:140%;
+
+}
+
+/* CONTENT CONTAINER SECTION */
+div.container {
+    font-size:1.1em;   
+    width:35%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+}
+
+
+/* Responsively change parameters according to screen size */
+/* If screen width is less than 680 pixels do as follows*/
+@media screen and (max-width:680px) {
+    div.container { width:50%;}
+}
+
+@media screen and (max-width:500px) {
+    div.container { width:75%;}
+}
+
+@media screen and (max-width:200px) {
+    div.container { width:80%;}
+}
+
+
+.textBox{
+    width: 290px;
+    border: 0px;
+    font-size:28px;
+    color: silver;
+    margin: auto;
+    padding: 0px;
+}
+
+input{
+    outline:0;
+}
+
+::selection{
+    background-color: #FFA;
+}
+
+.followersMinusFollowing{
+    float:left;
+    margin-right:30px;
+}
+
+.followingMinusFollowers{
+    float:left;
+}
+
+.heading1{
+    color:#009900;
+}
+
+.heading2{
+    color:#7f0000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e9e9e9;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e9e9e9;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e9e9e9;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #e9e9e9;
+}
+
+/*http://cssdeck.com/labs/beautiful-flat-buttons */
+/* #Pomegranate Flat Button
+==================================================*/
+.pomegranate-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 220px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #c0392b;
+  border: 0;
+  border-bottom: 2px solid #b53224;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #b53224;
+  box-shadow: inset 0 -2px #b53224;
+}
+.pomegranate-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

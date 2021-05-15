@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>GDiff</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles/main.css"></link>
+  <script type="text/javascript" src="js/main.js"> </script>
+</head>
+
+<body onload="init()">
+
+<div class="container">
+  <input type="text" class="textBox" placeholder="Username" id="textBox" onkeypress="processKey(event)"/> 
+  <br><br>
+  <input type="button" class="pomegranate-flat-button" id="button" value="Calculate Diff"/>
+  <br><br>
+
+  <div id="output"></div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+  function init(){
+      var button = document.getElementById("button");
+      var outputDiv = document.getElementById("output");
+      document.getElementById("textBox").focus();
+      var gDiff = new GDiff();
+      gDiff.init();
+  }
+</script>
+<html>
